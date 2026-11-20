@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 from motor.motor_asyncio import AsyncIOMotorClient
 
 load_dotenv()
-TOKEN=os.getenv('MTUyNzM1NTQ4NjY3MDk1MDUwMQ.GCwdJP.OxaQDJUWW0aNzT6L12MhlTdDUqf2Ac4wUOj-xU','').strip(); OWNER_ID=int(os.getenv('1523681366468853851','0') or 0)
+TOKEN=os.getenv('DISCORD_TOKEN','').strip(); OWNER_ID=int(os.getenv('OWNER_ID','0') or 0)
 MONGO_URI=os.getenv('MONGODB_URI','').strip(); ENC_KEY=os.getenv('TOKEN_ENCRYPTION_KEY','').strip()
 AUDIO_DIR=Path(os.getenv('AUDIO_DIR','/app/audio')); MEDIA_DIR=AUDIO_DIR/'library'
 MAX_BOTS=int(os.getenv('MAX_BOTS','5')); MAX_UPLOAD_MB=int(os.getenv('MAX_UPLOAD_MB','25'))
